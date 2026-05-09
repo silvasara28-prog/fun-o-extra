@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login-nike</title>
+    <link href="login.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="gato"> <h1 class="leao">Login</h1> <form action="" method="POST">
+        <input type="text" name="email" placeholder="E-mail" class="pato"> <input type="password" name="senha" placeholder="Senha" class="pato">
+        <input type="submit" value="Entrar" class="foca"> </form>
+
+    <a href="recuperarsenha.html" class="coelho">Esqueceu sua senha?</a> </div>
+
+<script>
+    document.querySelector('form').onsubmit = function(e) {
+        if (this.email.value == "" || this.senha.value == "") {
+            e.preventDefault(); 
+            alert("Preencha tudo!");
+        } else {
+            alert("Entrando...");
+        }
+    };
+</script>
+</body>
+</html>

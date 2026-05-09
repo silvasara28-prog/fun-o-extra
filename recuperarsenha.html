@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Redefinir Senha</title>
+    <link href="recuperarsenha.css" rel="stylesheet">
+</head>
+<body>
+
+<div class="macaco"> <h1 class="tubarao">Recuperar Senha</h1> <p class="zebra">Digite seu e-mail cadastrado para receber as instruções.</p> <form action="" method="POST">
+        <input type="text" name="email" placeholder="Seu e-mail" class="pato">
+        <input type="submit" value="Enviar Link" class="foca">
+    </form>
+
+    <a href="login.html" class="coelho">Voltar para o Login</a>
+</div>
+
+<script>
+    document.querySelector('form').onsubmit = function(e) {
+        if (this.email.value == "") {
+            e.preventDefault();
+            alert("Digite seu e-mail!");
+        } else {
+            alert("Enviamos um link para você!");
+        }
+    };
+</script>
+</body>
+</html>
